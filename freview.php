@@ -52,37 +52,42 @@
             Review-uri
         </div>
         <div class="reviews">
-                <?php
-                    $username = '';
-                    $localhost = "localhost";
-                    $id_db = "root";
-                    $pwd_db = "";
-                    $database_name = "cossy";
-                    $db = mysqli_connect($localhost , $id_db , $pwd_db , $database_name);
+            <select>
+                
+            </select>
 
-                    $sql = "SELECT * FROM reviews";
-                    $query = mysqli_query($db, $sql);
 
-                    while($row = mysqli_fetch_assoc($query)){
-                        echo '<div class="review_label">';
-                            if($row['imagine1']){
-                                echo '<img src="data:image/jpeg;base64,' . base64_encode($row['imagine1']) . '" height="100px">';
+            <?php
+                /*$username = '';
+                $localhost = "localhost";
+                $id_db = "root";
+                $pwd_db = "";
+                $database_name = "cossy";
+                $db = mysqli_connect($localhost , $id_db , $pwd_db , $database_name);
+
+                $sql = "SELECT * FROM reviews";
+                $query = mysqli_query($db, $sql);
+
+                while($row = mysqli_fetch_assoc($query)){
+                    echo '<div class="review_label">';
+                        if($row['imagine1']){
+                            echo '<img src="data:image/jpeg;base64,' . base64_encode($row['imagine1']) . '" height="100px">';
+                        }
+                        else{
+                            if($row['imagine2']){
+                                echo '<img src="data:image/jpeg;base64,' . base64_encode($row['imagine2']) . '" height="100px">';
+                                echo $row['imagine2'];
                             }
                             else{
-                                if($row['imagine2']){
-                                    echo '<img src="data:image/jpeg;base64,' . base64_encode($row['imagine2']) . '" height="100px">';
-                                    echo $row['imagine2'];
-                                }
-                                else{
-                                    if($row['imagine3']){
-                                        echo '<img src="data:image/jpeg;base64,' . base64_encode($row['imagine3']) . '" height="100px">';
-                                    }
+                                if($row['imagine3']){
+                                    echo '<img src="data:image/jpeg;base64,' . base64_encode($row['imagine3']) . '" height="100px">';
                                 }
                             }
-                        echo '</div>';
-                    }
+                        }
+                    echo '</div>';
+                }*/
 
-                ?>
+            ?>
                 
         </div>
     </div>

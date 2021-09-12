@@ -40,7 +40,7 @@
 					echo "alert('Trebuie sa fie trimisa cel putin o imagine');";
 				}
 				else{
-					$sql2 = "INSERT INTO reviews (id_user, titlu, imagine1, descriere, categorie, pret, producator) VALUES ($id_user, $titlu, $imagine1, $descriere, $categorie, $pret, $producator)";
+					$sql2 = "INSERT INTO reviews (id_user, titlu, imagine1, descriere, categorie, pret, producator) VALUES ('$id_user', '$titlu', '$imagine1', '$descriere', '$categorie', '$pret', '$producator')";
 				}	
 			}
 			else{
@@ -75,7 +75,7 @@
 		}
 		else{
 			echo mysqli_error($db);
-			echo " ".$id_user.$titlu . $imagine1 . $imagine2 . $imagine3 . $descriere . $categorie . $pret . $producator;
+			echo " ".$id_user. " " . $titlu ." " . $imagine1 . " " .$imagine2 . " " .$imagine3 . " " .$descriere . " " .$categorie . " " .$pret . " " .$producator .'<br>';
 			echo " ". $ok1. $ok2 . $ok3;
 		}
 	}

@@ -1,4 +1,5 @@
 <?php include("server.php") ?>
+<?php include("get_review_form_data.php") ?>
 <html>
 	<style>
 		div.container{
